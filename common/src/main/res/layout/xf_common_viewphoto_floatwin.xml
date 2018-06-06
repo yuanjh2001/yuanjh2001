@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xf_common_white"
+    android:orientation="vertical" >
+    <View
+        android:id="@+id/statucbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/xf_common_pancel_bg"/>
+    <RelativeLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:background="@color/xf_common_pancel_bg">
+        <ImageButton
+            android:id="@+id/back_id"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/xf_common_transparent"
+            android:src="@drawable/xf_gamesdk_ic_nav_back1" />
+        <TextView
+            android:id="@+id/cameraother_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/xf_common_transparent"
+            android:textColor="@color/xf_common_white"
+            android:textSize="18sp"
+            android:text="选择图片" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_photosingle_checked_childgrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:padding="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip" >
+    </GridView>
+
+</LinearLayout>

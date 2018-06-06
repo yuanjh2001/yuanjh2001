@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xf_common_transparent">#00000000</color>
+    <color name="xf_common_new_game_text_blue">#386fc5</color>
+    <color name="xf_common_news_text_title_color">#323232</color>
+    <color name="xf_common_press_btn_bg">#f6f6f9</color>
+    <color name="xf_common_bt_select_change1">#D2D2DA</color>
+    <color name="xf_common_bt_select_change">#D2D2D2</color>
+    <color name="xf_common_white">#FFFFFF</color>
+    <color name="xf_common_bg_titlebar">#1A191E</color>
+    <color name="xf_common_grey">#323232</color>
+    <color name="xf_common_black">#000000</color>
+    <color name="xf_common_pancel_bg">#1A191E</color>
+    <color name="xf_common_dialog_tv">#323232</color>
+    <color name="xf_common_line_grey">#f0f0f0</color>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/social_more_bg"
+    android:layout_marginRight="12dip"
+    android:paddingTop="5dip"
+    android:orientation="vertical" >  
+  <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="46dip"
+    android:id="@+id/group_search_layout"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@mipmap/social_more_search"
+    	android:layout_alignParentLeft="true"
+    	android:id="@+id/social_more_search"
+    	android:layout_centerVertical="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/search_group"
+    	android:layout_centerVertical="true"
+    	android:id="@+id/groom_text"
+    	android:layout_marginLeft="10dip"
+    	android:layout_toRightOf="@+id/social_more_search"
+        />
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="46dip"
+    android:id="@+id/neighbor_search_layout"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    android:visibility="gone"
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@mipmap/social_more_search"
+    	android:layout_alignParentLeft="true"
+    	android:id="@+id/social_more_neighbor_search"
+    	android:layout_centerVertical="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/groom"
+    	android:layout_centerVertical="true"
+    	android:layout_marginLeft="10dip"
+    	android:layout_toRightOf="@+id/social_more_neighbor_search"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0.5dip"
+    android:background="#dddddd"
+    />
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="46dip"
+    android:id="@+id/contact_layout"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@mipmap/social_more_contatcts"
+    	android:layout_alignParentLeft="true"
+    	android:id="@+id/social_more_contatcts"
+    	android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/social_more_contatcts"
+        android:layout_marginLeft="10dip"
+        android:text="@string/address_book" />
+
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0.5dip"
+    android:background="#dddddd"
+    />
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="46dip"
+    android:id="@+id/add_group_layout"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@mipmap/social_add_group"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerVertical="true"
+    	android:id="@+id/social_more_add_group"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/add_group"
+    	android:layout_centerVertical="true"
+    	android:layout_toRightOf="@+id/social_more_add_group"
+    	android:layout_marginLeft="10dip"
+        />
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="46dip"
+    android:id="@+id/switch_mode_layout"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    android:visibility="gone"
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@mipmap/social_more_sort"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerVertical="true"
+    	android:id="@+id/social_more_sort"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/switch_mode"
+    	android:layout_centerVertical="true"
+    	android:layout_toRightOf="@+id/social_more_sort"
+    	android:layout_marginLeft="10dip"
+        />
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>

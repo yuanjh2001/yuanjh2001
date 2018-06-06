@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_ly_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xf_common_bg_titlebar"
+    android:paddingTop="@dimen/xf_common_toolbar_padding_top">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xf_common_titlebar_h"
+        android:background="@color/xf_common_transparent"
+        android:gravity="center_vertical">
+        <!--标题-->
+        <TextView
+            android:id="@+id/tv_commontitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:textColor="@color/xf_common_white"
+            android:textSize="18sp" />
+        <!--列表切换-->
+        <ImageView
+            android:id="@+id/rl_list"
+            android:layout_width="9dp"
+            android:layout_height="6dp"
+            android:layout_toRightOf="@+id/tv_commontitle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:visibility="invisible" />
+        <!--右边搜索-->
+        <ImageView
+            android:id="@+id/rl_commomsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/xf_common_ic_nav_search"
+            android:visibility="visible" />
+
+        <!--右边保存-->
+        <TextView
+            android:id="@+id/rl_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="保存"
+            android:textColor="@color/xf_common_white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <!--左边返回、后退-->
+        <ImageView
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/xf_common_ic_nav_back"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

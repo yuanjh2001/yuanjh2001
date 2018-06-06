@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@color/xf_common_pancel_bg">
+
+            <ImageButton
+                android:id="@+id/camera_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/xf_common_transparent"
+                android:src="@drawable/xf_gamesdk_btn_tp_ic" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="@dimen/xf_common_toolbar_padding_top"
+            android:layout_width="match_parent"
+            android:background="@color/xf_common_pancel_bg"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@color/xf_common_pancel_bg">
+                <ImageButton
+                    android:id="@+id/back_id"
+                    android:layout_width="36dp"
+                    android:layout_height="44dp"
+                    android:background="@color/xf_common_transparent"
+                    android:src="@drawable/xf_gamesdk_ic_nav_back1" />
+                <Space
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/cameraother_btn"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/xf_common_transparent"
+                    android:src="@drawable/xf_gamesdk_btn_tp_retourner"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:background="@color/xf_common_bg_titlebar"
+        >
+    <include layout="@layout/xf_common_titlebar"></include>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:background="@color/xf_common_bg_titlebar"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="28dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+       <!--全部-->
+        <LinearLayout
+            android:id="@+id/all_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:clickable="true"
+             android:focusable="true"
+            android:descendantFocusability="beforeDescendants"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:focusable="false"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="right"
+                        android:text="@string/all"
+                        android:focusable="false"
+                        android:textColor="@color/find_titlebar_font_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_all"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:focusable="false"
+                    android:orientation="horizontal" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!--美食-->
+        <LinearLayout
+            android:id="@+id/food_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:descendantFocusability="beforeDescendants"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:focusable="false"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="center"
+                        android:text="@string/food"
+                        android:textColor="@color/white"
+                        android:focusable="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_food"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:orientation="horizontal"
+                    android:focusable="false"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--运动-->
+        <LinearLayout
+            android:id="@+id/sport_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="center"
+                        android:text="@string/sport"
+                        android:textColor="@color/white"
+                        android:focusable="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_sport"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--电影 -->
+        <LinearLayout
+            android:id="@+id/film_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dip"  >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_film"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_film"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="center"
+                        android:text="@string/film"
+                        android:textColor="@color/white"
+                        android:focusable="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_film"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!--游戏-->
+        <LinearLayout
+            android:id="@+id/game_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dip"  >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="center"
+                        android:text="@string/game"
+                        android:textColor="@color/white"
+                        android:focusable="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_game"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!--小酌-->
+        <LinearLayout
+            android:id="@+id/drink_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dip"  >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_drink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="center"
+                        android:text="@string/drink"
+                        android:textColor="@color/white"
+                        android:focusable="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_drink"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!--推荐-->
+        <LinearLayout
+            android:id="@+id/nominate_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="28dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/system_nominate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_groom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="3dip"
+                        android:gravity="center"
+                        android:text="@string/nominate"
+                        android:textColor="@color/white"
+                        android:focusable="false"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line_groom"
+                    android:layout_width="16dip"
+                    android:layout_height="2dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/find_titlebar_font_color"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.amap.api.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.amap.api.maps.MapView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="voice">声音</string>
+
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="exit_group">退出</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+</resources>

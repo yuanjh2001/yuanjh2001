@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/framelayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_photosingle_checked_adapter_image"
+        android:layout_width="119dp"
+        android:layout_height="119dip"
+        android:background="@drawable/xf_common_friends_sends_pictures_no"
+        android:scaleType="centerCrop" />
+
+    <TextView 
+        android:id="@+id/tv_photosingle_checked_adapter_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</FrameLayout>

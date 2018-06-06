@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="130dp" android:layout_width="272dp"
+ android:background="#00000000" android:id="@+id/dialog">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:textColor="@color/xf_common_news_text_title_color"
+        android:textSize="@dimen/xf_common_game_text_title_size"
+        android:gravity="center"
+        android:text="有新版本，是否更新？"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <Button android:id="@+id/install_id"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/xf_common_radiobtnbg_left"
+            android:textSize="@dimen/xf_common_game_text_title_size"
+            android:textColor="@color/xf_common_new_game_text_blue"
+            android:text="更新"
+            />
+
+        <Button android:id="@+id/close_id"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/xf_common_radiobtnbg_right"
+            android:textSize="@dimen/xf_common_game_text_title_size"
+            android:textColor="@color/xf_common_new_game_text_blue"
+            android:text="取消"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

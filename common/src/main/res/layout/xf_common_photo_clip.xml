@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xf_common_black">
+
+    <ImageView
+        android:id="@+id/src_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside" />
+    <FrameLayout
+        android:id="@+id/contine_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:background="@color/xf_common_pancel_bg"
+        android:gravity="center_vertical">
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:background="@color/xf_common_transparent"
+            android:button="@null"
+            android:text="取消"
+            android:textColor="@color/xf_common_white"
+            android:textSize="15sp" />
+        <Space
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton android:id="@+id/xuanzuan_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@color/xf_common_transparent"
+            android:src="@drawable/xf_gamesdk_ic_user_avatar_rotate"
+            />
+        <Space
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/submit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:background="@color/xf_common_transparent"
+            android:button="@null"
+            android:text="选取"
+            android:textColor="@color/xf_common_white"
+            android:textSize="15sp" />
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.happynetwork.vrestate.activitys.RegActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_l"
+        android:paddingRight="@dimen/margin_r"
+        android:paddingTop="@dimen/margin_t">
+
+        <LinearLayout
+            android:id="@+id/content_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_h"
+                android:background="@drawable/xf_common_radius_bg_normal"
+                android:gravity="center">
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xf_gamesdk_ic_login_phone"
+                    android:textColor="@color/bt_txt"
+                    android:textSize="@dimen/input_txt" />
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/tel_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:hint="请输入11位手机号"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|textAutoComplete"
+                    android:maxLength="11"
+                    android:nextFocusDown="@+id/checkcode_id"
+                    android:textColor="@color/ed_txt"
+                    android:textColorHint="@color/hit_txt"
+                    android:textSize="@dimen/input_txt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/checkcode_ly_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_h"
+                android:background="@drawable/xf_common_radius_bg_normal"
+                android:gravity="center">
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="验证码:"
+                    android:background="@drawable/xf_gamesdk_ic_login_seccode"
+                    android:textColor="@color/bt_txt"
+                    android:textSize="@dimen/input_txt" />
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/checkcode_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:ems="11"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/ed_txt"
+                    android:textSize="@dimen/input_txt"
+                    android:textColorHint="@color/hit_txt" />
+                <View
+                    android:layout_width="@dimen/line_h"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_bg" />
+
+                <Button
+                    android:id="@+id/t_getcheckcode_id"
+                    android:layout_width="@dimen/getcode_w"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_id"
+                    android:background="@null"
+                    android:button="@null"
+                    android:text="获取验证码"
+                    android:textColor="@color/getcode_txt"
+                    android:textSize="@dimen/getcode_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/checkbox_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/check_bg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bt_disable"
+                    android:textSize="@dimen/xieyi_txt"
+                    android:text="注册表示你已同意" />
+
+                <TextView
+                    android:id="@+id/xieyi_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:text="《S+用户协议》"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/xieyi_txt" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reg_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_h"
+            android:layout_below="@+id/content_id"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/bt_disable"
+            android:button="@null"
+            android:text="立即注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/big_bt_txt" />
+
+        <TextView
+            android:id="@+id/get_pass_id"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/reg_id"
+            android:layout_marginTop="@dimen/forgetpass_t"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:text="无法获取验证码？"
+            android:textColor="@color/tips_txt"
+            android:textSize="@dimen/xieyi_txt" />
+    </RelativeLayout>
+</RelativeLayout>

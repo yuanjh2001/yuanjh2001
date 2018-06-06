@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/xf_common_mytoast_bg"
+    android:orientation="horizontal">
+
+    <Space
+        android:layout_width="28dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/im_id"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/xf_common_ic_popup_right"/>
+
+    <TextView
+        android:id="@+id/tvForToast"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginRight="28dp"
+        android:background="@color/xf_common_transparent"
+        android:gravity="center"
+        android:text="手机号:"
+        android:textColor="@color/xf_common_white"
+        android:textSize="15sp" />
+
+</LinearLayout>

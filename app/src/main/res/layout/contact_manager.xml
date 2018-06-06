@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/corners_contacttomanager_white_bg"
+        >
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_marginRight="12dip"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close_img"
+                android:src="@mipmap/mine_contactmanager_cancel"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <ImageView 
+            android:layout_width="110dip"
+            android:layout_height="110dip"
+            android:src="@mipmap/default_icon"
+            android:id="@+id/head_img"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_nick_name"
+            android:id="@+id/nickname"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#333333"
+            android:textSize="25sp"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="27dip"
+            />
+        <LinearLayout 
+            android:layout_width="250dip"
+            android:layout_height="50dip"
+            android:background="@mipmap/mine_button"
+            android:id="@+id/contact_manager_layout"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_manager"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

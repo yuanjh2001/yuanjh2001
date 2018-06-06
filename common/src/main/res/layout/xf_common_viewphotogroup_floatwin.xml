@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xf_common_white"
+        android:orientation="vertical" >
+        <View
+            android:id="@+id/statucbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/xf_common_pancel_bg"/>
+        <RelativeLayout
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:background="@color/xf_common_pancel_bg">
+            <ImageButton
+                android:id="@+id/back_id"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="48dp"
+                android:background="@color/xf_common_transparent"
+                android:src="@drawable/xf_gamesdk_ic_nav_back1" />
+            <TextView
+                android:id="@+id/cameraother_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/xf_common_transparent"
+                android:textColor="@color/xf_common_white"
+                android:textSize="18sp"
+                android:text="我的相册" />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/gv_circlefriends_scannerimage_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/xf_common_transparent"
+            android:cacheColorHint="@color/xf_common_transparent"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="20dp"
+            android:gravity="center"
+            android:divider="@color/xf_common_line_grey"
+            android:dividerHeight="1dp"
+            android:verticalSpacing="20dp" >
+        </ListView>
+
+    </LinearLayout>
+</FrameLayout>

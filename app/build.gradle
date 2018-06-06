@@ -1,0 +1,132 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        disable "ResourceType"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'key1'
+            keyPassword '123456789'
+            storeFile file('C:\\Users\\Administrator\\.AndroidStudio3.0\\debug1.jks')
+            storePassword '123456789'
+        }
+        dev {
+            keyAlias 'key1'
+            keyPassword '123456789'
+            storeFile file('C:\\Users\\Administrator\\.AndroidStudio3.0\\debug1.jks')
+            storePassword '123456789'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.longwan.chatuidemo"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "1"
+    }
+    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+        destinationDir file("$projectDir/libs")
+        baseName "SoLibs"
+        extension "jar"
+        from fileTree(dir: "libs", include: "**/*.so")
+        into "lib"
+    }
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+    }
+    productFlavors {
+        xfnetwork {
+            manifestPlaceholders = [UMENG_APPKEY_VALUE       : "57a7fe7267e58eb3ed003126",
+                                    JPUSH_APPKEY_VALUE       : "1473b8855e4bc2eaa1785488",
+                                    UMENG_CHANNEL_VALUE      : "xfnetwork",
+                                    JPUSH_CHANNEL_VALUE      : "xfnetwork",
+                                    HAPPYNETWORK_GAMEID_VALUE: "697009"]
+        }
+    }
+    buildTypes {
+        debug {
+            manifestPlaceholders = [USER_SERVER_VALUE: "1"]
+            minifyEnabled false
+            pseudoLocalesEnabled true
+            debuggable true
+            jniDebuggable true
+            versionNameSuffix 'debug'
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+
+        beta {
+            manifestPlaceholders = [USER_SERVER_VALUE: "2"]
+            minifyEnabled false
+            pseudoLocalesEnabled true
+            debuggable true
+            jniDebuggable true
+            versionNameSuffix 'beta'
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+
+        release {
+            manifestPlaceholders = [USER_SERVER_VALUE: "3"]
+            minifyEnabled false
+            pseudoLocalesEnabled true
+            debuggable true
+            jniDebuggable true
+            versionNameSuffix 'release'
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "2g"
+    }
+}
+
+dependencies {
+    compile files('libs/picasso-2.4.0.jar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.yolanda.nohttp:nohttp:1.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile('com.android.support:appcompat-v7:23.4.0') {
+        exclude module: 'support-v4' }
+//    compile 'com.android.support:design:23+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_view.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_umengqq.jar')
+    compile files('libs/SocialSDK_umengsina.jar')
+    compile files('libs/SocialSDK_umengwx.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile project(':common')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile files('libs/baidumapapi_v3_2_0.jar')
+    compile files('libs/locSDK_3.3.jar')
+    compile files('libs/Parse-1.9.4.jar')
+    compile 'com.parse.bolts:bolts-android:1.2.0'
+    compile(name: 'sdk-videowidget-1.10.0', ext: 'aar')
+    compile(name: 'sdk-commonwidget-1.10.0', ext: 'aar')
+    compile(name: 'sdk-common-1.10.0', ext: 'aar')
+    compile 'com.google.protobuf.nano:protobuf-javanano:3.1.0'
+    compile 'com.google.android.exoplayer:exoplayer:r1.5.10'
+    compile files('libs/AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar')
+    compile files('libs/AMap_Search_V3.2.1_20160308.jar')
+    compile files('libs/Android_Location_V1.3.2.jar')
+    compile files('libs/Android_Map_V2.7.20151124.jar')
+}
+
