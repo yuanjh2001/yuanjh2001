@@ -4,7 +4,6 @@
     android:background="@color/xf_common_white"
     android:orientation="vertical" >
     <View
-        android:id="@+id/statucbar_id"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="@color/xf_common_pancel_bg"/>

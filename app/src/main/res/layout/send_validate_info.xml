@@ -5,7 +5,7 @@
     android:background="#f6f6f6"
     android:orientation="vertical" >
     
-<include layout="@layout/common_white_title" android:id="@+id/common_title"/>
+<include layout="@layout/common_white_title" />
 <LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="match_parent"

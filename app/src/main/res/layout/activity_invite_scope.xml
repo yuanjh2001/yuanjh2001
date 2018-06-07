@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_invite_scope"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -33,7 +32,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/fragment_bg"
-            android:id="@+id/select_scope_layout"
             android:orientation="vertical">
 
             <View
@@ -43,7 +41,6 @@
                 android:layout_marginTop="25dp"
                 android:background="@color/xf_common_bg_titlebar" />
             <ImageView
-                android:id="@+id/title_bar"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/bottom_nav_h"
                 android:scaleType="fitXY"
@@ -199,7 +196,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1"
-                        android:id="@+id/position"
                         android:layout_toLeftOf="@+id/line"
                         android:layout_centerVertical="true"
                         android:textSize="12sp"
@@ -208,7 +204,6 @@
                 </RelativeLayout>
 
                 <ListView
-                    android:id="@+id/friend_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white" />

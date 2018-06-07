@@ -100,9 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/corners_filter_button_yellow_bg"
-                android:gravity="center"
-                android:id="@+id/all_sort_layout"
-                >
+                android:gravity="center">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,9 +114,7 @@
                 android:background="@drawable/corners_filter_button_gray_bg"
                 android:gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:id="@+id/start_sort_layout"
-                >
+                android:layout_marginRight="10dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -130,9 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/corners_filter_button_gray_bg"
-                android:gravity="center"
-                android:id="@+id/new_sort_layout"
-                >
+                android:gravity="center">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -294,7 +288,6 @@
         android:gravity="center"
         android:paddingLeft="20dp"
         android:background="@drawable/corners_btn_confirm_blackdeep_bg"
-        android:id="@+id/confirm_layout"
         android:orientation="horizontal"
         android:layout_marginBottom="18dip"
         android:layout_centerHorizontal="true"

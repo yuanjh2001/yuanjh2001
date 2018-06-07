@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_user_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.happynetwork.vrestate.activitys.UserMainActivity">
@@ -17,7 +16,6 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/bottom_menu_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/line3_id"

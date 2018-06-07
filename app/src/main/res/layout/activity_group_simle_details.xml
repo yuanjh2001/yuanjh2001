@@ -60,7 +60,6 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/email_contanier"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="11dp"

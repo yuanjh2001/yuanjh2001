@@ -42,7 +42,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -93,7 +92,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_food"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -142,7 +140,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_sport"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -189,7 +186,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_film"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -235,7 +231,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_game"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -281,7 +276,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_drink"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -327,7 +321,6 @@
                 android:orientation="vertical" >
 
                 <LinearLayout
-                    android:id="@+id/system_nominate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"

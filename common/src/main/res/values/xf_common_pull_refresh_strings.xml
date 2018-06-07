@@ -12,15 +12,5 @@
 
     <string name="app_name">Common</string>
 
-    <string name="xf_common_notifyTitle">提示</string>
-    <string name="xf_common_notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
-    <string name="xf_common_setting">设置</string>
-    <string name="xf_common_wait_dialog_title">请稍后…</string>
     <string name="xf_common_loading_dialog_title">加载中…</string>
-    <string name="file_null">文件不存在!</string>
-    <string name="upload_fail">上传失败!</string>
-    <string name="nohttp_error_parse_data_error">解析数据时发生错误。</string>
-    <string name="nohttp_error_unknow">网络异常。</string>
-    <string name="responsecode_no_200">服务器应答异常!</string>
-    <string name="gson_error">服务器数据异常！</string>
 </resources>

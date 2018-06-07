@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical" >
-    <include layout="@layout/common_white_title" android:id="@+id/common_title"/>
+    <include layout="@layout/common_white_title" />
     <LinearLayout 
         android:layout_width="match_parent"
          android:layout_height="10dip"
@@ -39,7 +39,6 @@
         android:layout_height="50dip"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/right_icon"
-        android:id="@+id/group_headimg"
         android:src="@mipmap/default_icon"
         />
 </RelativeLayout>
@@ -117,7 +116,6 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/right_icon_des"
-        android:id="@+id/group_des"
         android:text="@string/group_des"
         android:textSize="13sp"
         android:textColor="#888888"

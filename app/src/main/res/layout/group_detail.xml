@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#f7f7f7"
     android:orientation="vertical" >
-  <include layout="@layout/common_white_title" android:id="@+id/common_title"/>
+  <include layout="@layout/common_white_title" />
   <RelativeLayout 
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -54,16 +54,13 @@
               android:layout_height="wrap_content"
               android:text="223311"
               android:textColor="#333333"
-              android:textSize="14sp"
-              android:id="@+id/group_id"
-              />
+              android:textSize="14sp" />
       </LinearLayout>
       <TextView 
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:gravity="center"
           android:text="@string/default_food_des"
-          android:id="@+id/group_des"
           android:layout_marginLeft="10dip"
           android:layout_marginRight="10dip"
           android:layout_below="@+id/group_id_layout"
@@ -136,7 +133,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/social_addgroupnumber"
-        android:id="@+id/add_groupnumber"
         android:layout_gravity="top"
         android:layout_marginTop="10dip"
         android:layout_marginLeft="5dip"
@@ -169,9 +165,7 @@
             android:layout_height="wrap_content"
             android:src="@mipmap/social_close"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:id="@+id/notification_prevent"
-            />
+            android:layout_centerVertical="true" />
     </RelativeLayout>
     <LinearLayout 
     android:layout_width="match_parent"
@@ -204,8 +198,7 @@
 	    android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 	    android:src="@mipmap/button_login_register"
-	    android:id="@+id/add_group"
-	    android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
 	    />
 	    <TextView 
 	        android:layout_width="wrap_content"

@@ -3,8 +3,6 @@
     <dimen name="xf_common_space_36dp">36dp</dimen>
     <dimen name="xf_common_space_64dp">64dp</dimen>
     <dimen name="xf_common_game_text_title_size">17sp</dimen>
-    <dimen name="xf_common_space_1dp">1dp</dimen>
-    <dimen name="xf_common_titlebar_h">48dp</dimen>
 
     <dimen name="indicator_right_padding">10dp</dimen>
     <dimen name="indicator_corner_radius">12dp</dimen>

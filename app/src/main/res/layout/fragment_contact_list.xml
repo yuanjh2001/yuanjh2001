@@ -21,7 +21,6 @@
             android:scaleType="centerInside"
             android:src="@mipmap/social_return" />
         <TextView
-            android:id="@+id/message_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -62,7 +61,6 @@
                     android:layout_height="28dp" />
 
                 <TextView
-                    android:id="@+id/tv_loaing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"

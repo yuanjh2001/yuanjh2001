@@ -10,7 +10,6 @@
         android:background="@color/colorPrimary" />
 
     <RelativeLayout
-        android:id="@+id/yindao_ly_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 

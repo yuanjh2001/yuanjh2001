@@ -18,7 +18,6 @@
                 android:background="@color/transparent">
 
                 <ImageView
-                    android:id="@+id/head_view_bg_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
@@ -149,7 +148,6 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/line2_id"
                 android:layout_below="@+id/middle_menu_id"
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
@@ -164,7 +162,6 @@
                 android:background="@color/me_line" />
 
             <LinearLayout
-                android:id="@+id/bottom_menu_id"
                 android:layout_below="@+id/line3_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -175,7 +172,6 @@
                     android:gravity="center"
                     android:layout_height="44dp">
                     <TextView
-                        android:id="@+id/share_id"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -211,7 +207,6 @@
                     android:gravity="center"
                     android:layout_height="44dp">
                     <TextView
-                        android:id="@+id/huodonglist_id"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
@@ -245,7 +240,6 @@
                     android:background="@color/me_line" />
 
                 <LinearLayout
-                    android:id="@+id/huodong_menu_id"
                     android:layout_width="match_parent"
                     android:layout_height="99dp"
                     android:layout_below="@+id/line1_id"
@@ -253,7 +247,6 @@
                     android:gravity="center">
 
                     <TextView
-                        android:id="@+id/faqi_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -266,7 +259,6 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/baoming_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -279,7 +271,6 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/canjia_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -292,7 +283,6 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/xiangqu_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -324,7 +314,6 @@
                     android:gravity="center"
                     android:layout_height="44dp">
                     <TextView
-                        android:id="@+id/serverorder_id"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
@@ -372,7 +361,6 @@
                     android:layout_height="44dp">
                     <TextView
                         android:layout_weight="1"
-                        android:id="@+id/fun_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"
@@ -401,7 +389,6 @@
                     android:layout_height="44dp">
                     <TextView
                         android:layout_weight="1"
-                        android:id="@+id/guanzhu_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"
@@ -428,7 +415,6 @@
                     android:gravity="center"
                     android:layout_height="44dp">
                     <TextView
-                        android:id="@+id/victor_id"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -466,7 +452,6 @@
                     android:layout_height="44dp">
                     <TextView
                         android:layout_weight="1"
-                        android:id="@+id/friend_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"
@@ -503,7 +488,6 @@
                     android:layout_height="44dp">
                     <TextView
                         android:layout_weight="1"
-                        android:id="@+id/s_gonglue_id"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"

@@ -5,7 +5,7 @@
     android:background="#ffffff"
     android:orientation="vertical" >
     
-    <include layout="@layout/common_white_title" android:id="@+id/common_title" />
+    <include layout="@layout/common_white_title" />
 <LinearLayout 
     android:layout_width="fill_parent"
     android:layout_height="10dip"
@@ -40,9 +40,7 @@
         <ImageView 
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:src="@mipmap/social_add_headpic"
-             android:id="@+id/add_headpic"
-            />
+             android:src="@mipmap/social_add_headpic" />
     </LinearLayout>
     <RelativeLayout 
         android:layout_width="wrap_content"
@@ -78,7 +76,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:id="@+id/input_num"
             android:layout_toLeftOf="@+id/input_limit"
             android:layout_centerVertical="true"
             android:textColor="#dddddd"
@@ -101,7 +98,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:id="@+id/group_resume"
             android:hint="@string/input_group_resume"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -129,7 +125,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:id="@+id/input_num_resume"
             android:layout_toLeftOf="@+id/input_limit_resume"
             android:layout_centerVertical="true"
             android:textColor="#dddddd"
@@ -143,8 +138,7 @@
     	android:background="@mipmap/button_login_register"
     	android:layout_marginTop="30dip"
     	android:gravity="center"
-    	android:id="@+id/login_layout"
-    	android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
     	android:layout_marginLeft="20dip"
     	android:layout_marginRight="20dip"
     	
@@ -170,16 +164,14 @@
     	    android:layout_height="wrap_content"
     	    android:text="@string/read_and_agree"
     	    android:checked="true"
-    	    android:id="@+id/read_and_agree"
-    	    android:textColor="#333333"
+            android:textColor="#333333"
     	    android:textSize="14sp"
             />
         <TextView 
             android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
     	    android:text="@string/service_declare"
-    	    android:id="@+id/service_declare"
-    	    android:textColor="#f75742"
+            android:textColor="#f75742"
     	    android:textSize="14sp"
             />
     </LinearLayout>

@@ -25,7 +25,6 @@
             android:layout_marginLeft="16dp">
 
             <ImageView
-                android:id="@+id/headimg"
                 android:layout_width="75dip"
                 android:layout_height="84dip"
                 android:src="@mipmap/girl" />
@@ -50,7 +49,6 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/focus"
                         android:layout_width="12dp"
                         android:layout_height="12dp"
                         android:layout_alignParentRight="true"
@@ -64,7 +62,6 @@
                     android:layout_marginTop="2dip">
 
                     <TextView
-                        android:id="@+id/range"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4KM"
@@ -72,7 +69,6 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="01-02"
@@ -93,7 +89,6 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/default_address"
@@ -117,7 +112,6 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/person_num"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -163,7 +157,6 @@
         </LinearLayout>
         <!--邀请或者邀约内容简介，例如集体观影，品美食-->
         <LinearLayout
-            android:id="@+id/invite_content"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/head_resume"
@@ -172,7 +165,6 @@
             android:layout_marginTop="16dp">
 
             <TextView
-                android:id="@+id/party_resume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/default_party_resume"

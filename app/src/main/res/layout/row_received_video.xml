@@ -44,7 +44,6 @@
             android:layout_toRightOf="@id/iv_userhead" >
 
             <FrameLayout
-                android:id="@+id/chatting_click_area"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="@drawable/chatfrom_bg" >
@@ -56,7 +55,6 @@
                     android:scaleType="fitXY" />
 
                 <LinearLayout
-                    android:id="@+id/chatting_video_data_area"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:background="@drawable/chat_video_mask_to"
